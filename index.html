@@ -1,8 +1,36 @@
 <html>
   <head>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/jquery.js"></script> 
     <title>Bit Studio</title>
   </head>
   <body>
-    <p>This is a test for Bit Studio!</p>
+    <img src="./img/topLogo.png" alt="Bit Studio Logo" id="topLogo">
+
+    <table class="baseTable">
+      <tr>
+        <td class="baseTableCell" style="background-image: url('./img/base_tl.png');" width="64" height="64"></td>
+        <td class="baseTableCell baseTableRepeat" style="background-image: url('./img/base_t.png');" width="900" height="64"></td>
+        <td class="baseTableCell" style="background-image: url('./img/base_tr.png');" width="64" height="64"></td>
+      </tr>
+      <tr>
+        <td class="baseTableCell baseTableRepeat" style="background-image: url('./img/base_l.png');" width="64" height="64"></td>
+        <td class="baseTableCell baseTableRepeat" style="background-image: url('./img/base_m.png');" width="auto" height="auto">
+          <table>
+            <div id="content"></div>
+          </table>
+        </td>
+        <td class="baseTableCell baseTableRepeat" style="background-image: url('./img/base_r.png');" width="64" height="64"></td>
+      </tr>
+      <tr>
+        <td class="baseTableCell" style="background-image: url('./img/base_bl.png');" width="64" height="82"></td>
+        <td class="baseTableCell baseTableRepeat" style="background-image: url('./img/base_b.png');" width="auto" height="82"></td>
+        <td class="baseTableCell" style="background-image: url('./img/base_br.png');" width="64" height="82"></td>
+      </tr>
+    </table>
+    <div></div>
+    <script src="./posts/_allPosts.js"></script>
+    <script src="./js/posts.js"></script>
+    <div id="missingData"></div>
   </body>
 </html>

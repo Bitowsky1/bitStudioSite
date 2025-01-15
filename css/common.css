@@ -1,0 +1,73 @@
+* {
+    image-rendering: pixelated;
+    font-family: "base";
+    
+}
+
+@font-face {
+    font-family: "base";
+    src: url("../fonts/TCCEB.TTF");
+}
+
+body {
+    background-image: url("../img/bg.png");
+}
+
+
+#topLogo {
+    width: 70%;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.baseTableCell {
+    background-repeat: no-repeat;
+    padding: 0;
+}
+.baseTableRepeat {
+    background-repeat: repeat;
+}
+
+.baseTable {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: auto;
+}
+
+.postBox {
+    margin-left: 45px;
+    margin-bottom: 50px;
+}
+
+.post {
+    background-repeat: no-repeat;
+}
+
+.postMid {
+    background-image: url('../img/post_mid.png');
+    background-repeat: repeat-y;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+.postTitle {
+    text-align: center;
+    font-size: 48px;
+    width: 90%;
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.postMid img {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.postMid p {
+    margin-left: 20px;
+    margin-right: 60px;
+    text-align: left;
+}
