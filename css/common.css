@@ -10,6 +10,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-image: url("../img/bg.png");
 }
 
@@ -34,16 +35,23 @@ body {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
-    aspect-ratio: auto;
+    table-layout: fixed;
+}
+
+td { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
 }
 
 .postBox {
-    margin-left: 45px;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .post {
     background-repeat: no-repeat;
+    display: block;
+    max-width: 800px;
 }
 
 .postMid {
@@ -51,6 +59,7 @@ body {
     background-repeat: repeat-y;
     margin-top: -40px;
     margin-bottom: -40px;
+    
 }
 
 .postTitle {
@@ -70,4 +79,17 @@ body {
     margin-left: 20px;
     margin-right: 60px;
     text-align: left;
+}
+
+.footer {
+    color:#dadada;
+    background: linear-gradient(90deg, rgba(4,65,105,1) 0%, rgba(100,13,32,1) 100%);
+    text-align:center;
+    padding:15px;
+    margin-left:-40px;
+    margin-right:-20px;
+    margin-top: 20px;
+    margin-bottom: -200px;
+    font-size:20px;
+    border-top: 10px solid black;
 }
