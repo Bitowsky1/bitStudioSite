@@ -6,7 +6,7 @@ content = document.getElementById("content")
 
 
 
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 2; i++) {
     content.innerHTML += "<div class='postBox'><div class='post postStart');'><img src='img/post_top.png'></div><div class='post postMid' id='postId" + i + "'></div><div class='post postEnd');'><img src='img/post_bottom.png'></div></div>"    
     loadPost(i)
 }
@@ -14,7 +14,7 @@ for (i = 0; i < 10; i++) {
 function loadPost(id) {
     $(function(){
         //alert(id)
-        $("#postId" + id).load("posts/post_1.html"); 
+        $("#postId" + id).load("posts/" + posts[latestPost - id].file); 
       });
 }
 

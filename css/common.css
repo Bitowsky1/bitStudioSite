@@ -6,7 +6,14 @@
 
 @font-face {
     font-family: "base";
-    src: url("../fonts/TCCEB.TTF");
+    src: url("../fonts/AlteHaasGroteskRegular.ttf");
+    text-rendering: optimizeSpeed;
+}
+
+@font-face {
+    font-family: "baseBold";
+    src: url("../fonts/AlteHaasGroteskBold.ttf");
+    text-rendering: optimizeSpeed;
 }
 
 body {
@@ -36,6 +43,7 @@ body {
     font-size: 36px;
     padding: 10px;
     user-select: none;
+    font-family: "baseBold";
 }
 
 .topButtons:hover {
@@ -89,6 +97,7 @@ td {
     font-size: 36px;
     width: 100%;
     background-color: rgb(255, 200, 0);
+    font-family: "baseBold";
 }
 
 .postMid img {
@@ -96,10 +105,14 @@ td {
     margin-left: 30px;
 }
 
-.postMid p {
+.postMid p h3 {
     margin-left: 20px;
     margin-right: 60px;
     text-align: left;
+}
+
+.postMid a {
+    color: blue;
 }
 
 .postDate::before {
