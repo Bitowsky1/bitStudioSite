@@ -23,6 +23,27 @@ body {
     display: block;
 }
 
+.topButtons {
+    max-width: 900px;
+    background-color: rgb(212, 255, 156);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    color: black;
+    border: 10px solid black;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+    user-select: none;
+}
+
+.topButtons:hover {
+    background-color: rgb(33, 57, 0);
+    color: white;
+    cursor: pointer;
+}
+
 .baseTableCell {
     background-repeat: no-repeat;
     padding: 0;
@@ -59,26 +80,36 @@ td {
     background-repeat: repeat-y;
     margin-top: -40px;
     margin-bottom: -40px;
-    
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .postTitle {
     text-align: center;
-    font-size: 48px;
-    width: 90%;
-    margin-left: 25px;
-    margin-right: 0;
+    font-size: 36px;
+    width: 100%;
+    background-color: rgb(255, 200, 0);
 }
 
 .postMid img {
     width: 700px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .postMid p {
     margin-left: 20px;
     margin-right: 60px;
     text-align: left;
+}
+
+.postDate::before {
+    content: "Publish Date: ";
+}
+
+.postDate {
+    text-align: right;
+    font-style: italic;
+    opacity: 0.5;
 }
 
 .footer {
